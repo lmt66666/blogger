@@ -50,7 +50,8 @@
        登录
       </a-button>
       或
-      <a href="">
+      <!-- 点击跳转到注册页面 -->
+      <a @click="register">
        立即注册
       </a>
     </a-form-item>

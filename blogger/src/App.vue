@@ -1,23 +1,11 @@
 <template> 
-
 <div>
-<router-Vue>
-  <login></login>
-
-</router-Vue>
-
-
+  <!-- 用于展示路由加载的页面 -->
+  <router-view></router-view>
 </div>
-
-
-
 </template>
-
 <script>
-// import hello from './components/HelloWorld.vue'
-import login from './components/login.vue'
 
-// import register from './components/register'
 
 export default {
  
@@ -26,10 +14,6 @@ export default {
       page:'login'
     }
   },
-  components:{
-    login,
-    // register
-  }
 };
 </script>
 

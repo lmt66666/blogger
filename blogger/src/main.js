@@ -12,34 +12,27 @@ import register from './components/register'
 Vue.use(Antd);
 Vue.use(Router);
 
-// const router = new Router({
-//   routes: [
-//     {
-//       path: '/',
-//       component: login
-//     },
-//     {
-//       path: '/register',
-//       component: register
-//     }
-//   ]
-// })
+const router = new Router({
+  routes: [
+    {
+      path: '/',
+      component: login
+    },
+    {
+      path: '/login',
+      component: login
+    },
+    {
+      path: '/register',
+      component: register
+    }
+  ]
+})
 
 /* eslint-disable no-new */
 new Vue({
   el:"#app",
-  router:new Router({
-    routes: [
-      {
-        path: '/',
-        component:login
-      },
-      {
-        path: '/register',
-        component: register
-      }
-    ]
-  }),
+  router: router,
   render: h => h(App)
    
 })
